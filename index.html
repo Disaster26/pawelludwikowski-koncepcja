@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Fotograf ślubny Chrzanów - Paweł Ludwikowski Fotografia</title>
+<meta name="description" content="Fotograf ślubny z Chrzanowa: reportaż ślubny, plener i zdjęcia z drona. Małopolska, Śląsk i cała Polska. Fotografia komercyjna dla firm i restauracji.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/lora-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" media="(min-width:701px)" imagesrcset="img/hero-1200.webp 1200w, img/hero-1800.webp 1800w, img/hero-2560.webp 2560w" imagesizes="100vw">
+<link rel="preload" as="image" media="(max-width:700px)" imagesrcset="img/hero-m-540.webp 540w, img/hero-m-900.webp 900w" imagesizes="100vw">
+<style>
+@font-face{font-family:"Lora";font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--czern:#111111;--grafit:#2B2B2B;--tekst:#3A3A3A;--szary:#F1F2F3;--linia:#DCDDDF;--bialy:#FFFFFF;--szer:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bialy);color:var(--tekst);font:400 17px/1.65 Jost,system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Lora,Georgia,serif;font-weight:500;color:var(--czern);line-height:1.18;margin:0}
+h2{font-size:clamp(30px,4vw,48px)}
+h3{font-size:22px}
+p{margin:0 0 1em}
+.wrap{max-width:var(--szer);margin:0 auto;padding:0 24px}
+.btn{display:inline-block;font:500 16px/1 Jost,sans-serif;text-decoration:none;padding:17px 30px;border:1px solid currentColor;transition:background .2s,color .2s}
+.btn-jasny{background:#fff;color:var(--czern);border-color:#fff}
+.btn-jasny:hover{background:transparent;color:#fff}
+.btn-ciemny{background:var(--czern);color:#fff;border-color:var(--czern)}
+.btn-ciemny:hover{background:#fff;color:var(--czern)}
+
+/* naglowek */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+.top .in{display:flex;align-items:center;justify-content:space-between;height:92px;padding:0 max(28px,6vw)}
+.logo{display:block;line-height:0}
+.logo img{height:66px;width:auto}
+.logo .lk{display:none}
+.top.scr{background:#fff;box-shadow:0 1px 0 var(--linia)}
+.top.scr .lw{display:none}.top.scr .lk{display:block}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{color:#fff;text-decoration:none;font-size:15.5px;letter-spacing:.02em}
+.top.scr .menu a{color:var(--czern)}
+.menu a:hover{text-decoration:underline;text-underline-offset:6px}
+.menu .tel{font-weight:600;border:1px solid currentColor;padding:9px 16px}
+.burger{display:none;background:none;border:0;padding:10px;margin-right:-10px;cursor:pointer;color:#fff}
+.top.scr .burger{color:var(--czern)}
+.burger span{display:block;width:26px;height:2px;background:currentColor;margin:6px 0}
+
+/* hero */
+.hero{position:relative;height:100vh;height:100svh;min-height:560px;color:#fff;display:flex;align-items:flex-end;overflow:hidden;background:#1d211b}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%}
+.hero picture img{object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0,rgba(0,0,0,0) 22%,rgba(0,0,0,0) 45%,rgba(0,0,0,.62) 100%),linear-gradient(90deg,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 45%)}
+.hero .txt{position:relative;z-index:2;width:100%;padding:0 max(56px,6vw) 9vh}
+.hero h1{color:#fff;font-size:clamp(33px,3.7vw,64px);font-weight:500}
+.hero p{font-size:clamp(17px,1.4vw,20px);max-width:36ch;margin:18px 0 30px;color:rgba(255,255,255,.92)}
+
+/* o mnie / list */
+.list{padding:120px 0 110px}
+.list .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+.list h2{margin-bottom:28px}
+.list .lead{font-size:20px;color:var(--czern)}
+.podpis{width:200px;height:auto;margin-top:26px}
+.list figure{margin:0;border:10px solid #fff;box-shadow:0 0 0 1px var(--linia)}
+.list figure img{width:100%;height:auto}
+.zasieg{margin-top:28px;padding-top:22px;border-top:1px solid var(--linia);font-size:15.5px}
+
+/* wystawa */
+.wystawa{background:var(--szary);padding:110px 0 100px}
+.wystawa .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:34px}
+.wystawa .head p{max-width:46ch;margin:14px 0 0}
+.rozdzialy{display:flex;gap:8px;flex-wrap:wrap}
+.rozdzialy button{font:500 15px/1 Jost,sans-serif;background:#fff;color:var(--czern);border:1px solid var(--linia);padding:12px 18px;cursor:pointer}
+.rozdzialy button.on{background:var(--czern);color:#fff;border-color:var(--czern)}
+.pas{--pl:max(24px,calc((100vw - var(--szer))/2 + 24px));display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-left:var(--pl);padding:4px 24px 22px var(--pl);scrollbar-width:thin;cursor:grab;-webkit-overflow-scrolling:touch}
+.pas.drag{cursor:grabbing;scroll-snap-type:none}
+.pas::-webkit-scrollbar{height:6px}.pas::-webkit-scrollbar-thumb{background:#bbb}
+.odb{flex:none;margin:0;scroll-snap-align:start;background:#fff;padding:10px 10px 0}
+.odb img{height:440px;width:auto;user-select:none;-webkit-user-drag:none;cursor:zoom-in}
+.odb figcaption{font-size:13.5px;color:#6b6b6b;padding:9px 2px 10px;min-height:38px}
+.pas-nav{display:flex;gap:10px;justify-content:flex-end;max-width:var(--szer);margin:6px auto 0;padding:0 24px}
+.pas-nav button{width:52px;height:52px;border:1px solid var(--czern);background:transparent;font-size:22px;cursor:pointer;color:var(--czern)}
+.pas-nav button:hover{background:var(--czern);color:#fff}
+
+/* z gory */
+.zgory{background:var(--czern);color:#d8d8d8;padding:120px 0}
+.zgory h2{color:#fff}
+.zgory .grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:70px;align-items:start}
+.zgory .opis{position:sticky;top:120px}
+.zgory .opis p{margin-top:22px}
+.zgory .fakty{list-style:none;padding:0;margin:30px 0 0;border-top:1px solid #333}
+.zgory .fakty li{padding:14px 0;border-bottom:1px solid #333;color:#fff}
+.mozaika{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mozaika a{display:block;overflow:hidden;background:#222}
+.mozaika img{width:100%;height:100%;object-fit:cover;transition:transform .6s;cursor:zoom-in}
+.mozaika a:hover img{transform:scale(1.03)}
+.mozaika .szer{grid-column:1/3}
+
+/* dla firm */
+.firmy{padding:120px 0 110px}
+.firmy .head{max-width:760px;margin-bottom:40px}
+.firmy .head p{margin-top:18px}
+.siatka{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.siatka a{display:block;aspect-ratio:4/5;overflow:hidden;background:#eee}
+.siatka a.l{grid-column:span 2;aspect-ratio:auto}
+.siatka img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform .6s}
+.siatka a:hover img{transform:scale(1.03)}
+.klienci{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:70px;padding-top:50px;border-top:1px solid var(--linia)}
+.klienci h3{margin-bottom:18px}
+.klienci ul{list-style:none;padding:0;margin:0;columns:2;column-gap:30px}
+.klienci li{padding:7px 0;border-bottom:1px solid var(--linia);break-inside:avoid;color:var(--czern)}
+
+/* kontakt */
+.kontakt{background:var(--szary);padding:110px 0}
+.kontakt .grid{display:grid;grid-template-columns:1fr 1.15fr;gap:80px}
+.kontakt .dane{margin-top:28px;font-size:18px}
+.kontakt .dane a{display:block;font-size:26px;font-family:Lora,serif;color:var(--czern);text-decoration:none;margin:4px 0}
+.kontakt .dane small{display:block;margin-top:18px;font-size:15px;color:#666}
+form{background:#fff;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form label{display:flex;flex-direction:column;gap:7px;font-size:14.5px;color:var(--czern)}
+form .cala{grid-column:1/3}
+input,textarea{font:inherit;font-size:16px;border:1px solid #cfd1d4;padding:13px 14px;background:#fff;color:var(--czern);border-radius:0}
+input:focus,textarea:focus{outline:2px solid var(--czern);outline-offset:-1px}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start;cursor:pointer}
+form .info{font-size:13.5px;color:#777;align-self:center}
+
+/* stopka */
+footer{background:var(--czern);color:#a9a9a9;padding:56px 0 34px;font-size:15px}
+footer .grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;align-items:start}
+footer img{width:170px;height:auto}
+footer a{color:#fff;text-decoration:none}
+footer .dol{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:40px;padding-top:22px;border-top:1px solid #2c2c2c}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+/* podglad zdjec */
+.lb{position:fixed;inset:0;background:rgba(10,10,10,.95);z-index:100;display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:88vh;width:auto;height:auto}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:14px 20px}
+.lb .x{top:10px;right:14px}.lb .p{left:6px;top:50%;transform:translateY(-50%)}.lb .n{right:6px;top:50%;transform:translateY(-50%)}
+
+@media (max-width:1100px){
+ .menu{gap:20px}
+ .siatka{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+ .burger{display:block}
+ .menu{position:fixed;inset:70px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;box-shadow:0 10px 20px rgba(0,0,0,.08);display:none}
+ .menu.on{display:flex}
+ .menu a{color:var(--czern);padding:15px 0;border-bottom:1px solid var(--linia);font-size:18px}
+ .menu .tel{margin-top:16px;text-align:center;border:1px solid var(--czern)}
+ .top .in{height:70px;padding:0 20px}
+ .top.menu-on{background:#fff}.top.menu-on .lw{display:none}.top.menu-on .lk{display:block}.top.menu-on .burger{color:var(--czern)}
+ .list .grid,.zgory .grid,.kontakt .grid,.klienci{grid-template-columns:1fr;gap:44px}
+ .zgory .opis{position:static}
+}
+@media (max-width:700px){
+ body{font-size:16.5px}
+ .wrap{padding:0 20px}
+ .logo img{height:52px}
+ .hero{min-height:0}
+ .hero picture img{object-position:50% 30%}
+ .hero .txt{padding:0 22px 34px}
+ .hero h1{font-size:clamp(32px,9.2vw,40px)}
+ .hero p{margin:12px 0 24px;font-size:16.5px}
+ .list,.wystawa,.zgory,.firmy,.kontakt{padding:76px 0}
+ .list .lead{font-size:18px}
+ .pas{--pl:20px;padding-right:20px;gap:12px}
+ .odb{padding:7px 7px 0}
+ .odb img{height:300px;max-width:80vw;object-fit:cover}
+ .rozdzialy{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px}
+ .rozdzialy button{flex:none;padding:11px 14px}
+ .pas-nav{display:none}
+ .mozaika{gap:8px}
+ .siatka{grid-template-columns:1fr 1fr;gap:8px}
+ .siatka a.l{grid-column:1/3}
+ .klienci ul{columns:1}
+ form{grid-template-columns:1fr;padding:24px}
+ form .cala{grid-column:auto}
+ footer .grid{grid-template-columns:1fr 1fr}
+ footer .grid>div:first-child{grid-column:1/3}
+}
+</style>
+</head>
+<body>
+<header class="top" id="top">
+ <div class="in">
+  <a class="logo" href="#" aria-label="Paweł Ludwikowski Fotografia - strona główna"><img class="lw" src="img/logo-bialy.webp" width="520" height="381" alt="Paweł Ludwikowski Fotografia"><img class="lk" src="img/logo-czarny.webp" width="520" height="381" alt="Paweł Ludwikowski Fotografia"></a>
+  <nav class="menu" id="menu">
+   <a href="#slub">Śluby</a>
+   <a href="#z-gory">Z drona</a>
+   <a href="#dla-firm">Dla firm</a>
+   <a href="#o-mnie">O mnie</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="tel" href="tel:+48664383005">664 383 005</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<section class="hero">
+ <picture>
+  <source media="(max-width:700px)" srcset="img/hero-m-540.webp 540w, img/hero-m-900.webp 900w" sizes="100vw">
+  <img src="img/hero-1800.webp" srcset="img/hero-720.webp 720w, img/hero-1200.webp 1200w, img/hero-1800.webp 1800w, img/hero-2560.webp 2560w" sizes="100vw" width="2560" height="1707" alt="Para młoda w ogrodzie w świetle zachodzącego słońca" fetchpriority="high">
+ </picture>
+ <div class="txt">
+  <h1>Fotograf ślubny<br> z&nbsp;Chrzanowa</h1>
+  <p>Szukam uciekających chwil: detali, emocji i&nbsp;gestów między gośćmi. Małopolska, Śląsk i&nbsp;cała Polska.</p>
+  <a class="btn btn-jasny" href="#kontakt">Zapytaj o&nbsp;wolny termin</a>
+ </div>
+</section>
+
+<section class="list" id="o-mnie">
+ <div class="wrap grid">
+  <div>
+   <h2>Cześć, jestem Paweł</h2>
+   <p class="lead">Podjęliście jedną z&nbsp;najpiękniejszych decyzji w&nbsp;życiu. Gratuluję! Przed Wami gorący czas planowania, w&nbsp;którym też chętnie pomogę.</p>
+   <p>Dzień Waszego ślubu to dla mnie poszukiwanie. Szukam uciekających chwil, ciekawych detali, emocji, gestów między gośćmi i&nbsp;tych sekund wypełnionych uśmiechem po zabawnym żarcie kogoś z&nbsp;rodziny.</p>
+   <p>Zależy mi, żebyście czuli się przy mnie swobodnie i&nbsp;bezpiecznie. Jestem przekonany, że ta relacja zaowocuje takimi zdjęciami, o&nbsp;jakich marzycie.</p>
+   <img class="podpis" src="img/logo-czarny.webp" width="520" height="381" alt="Podpis: Paweł Ludwikowski Fotografia" loading="lazy">
+   <p class="zasieg">Fotograf freelancer, absolwent WST w&nbsp;Katowicach (specjalizacja: realizacja obrazu), wykładowca fotografii i&nbsp;organizator warsztatów. Sesje na terenie całej Polski, najczęściej w&nbsp;Małopolsce i&nbsp;na Śląsku.</p>
+  </div>
+  <figure><img src="img/f102-s.webp" srcset="img/f102-s.webp 600w, img/f102-l.webp 1200w" sizes="(max-width:900px) 92vw, 620px" width="600" height="900" alt="Para młoda przytulona w złotym świetle" loading="lazy" decoding="async"></figure>
+ </div>
+</section>
+
+<section class="wystawa" id="slub">
+ <div class="wrap head">
+  <div>
+   <h2>Moja mała wystawa miłości</h2>
+   <p>Jeden dzień, od przygotowań do ostatniego tańca. Przesuńcie zdjęcia palcem albo myszą, kliknięte otwierają się w&nbsp;pełnym rozmiarze.</p>
+  </div>
+  <div class="rozdzialy" id="rozdzialy">
+   <button class="on" data-r="przygotowania">Przygotowania</button>
+   <button data-r="ceremonia">Ceremonia</button>
+   <button data-r="plener">Plener</button>
+   <button data-r="zabawa">Zabawa</button>
+  </div>
+ </div>
+ <div class="pas" id="pas">
+  <figure class="odb" data-r="przygotowania"><img src="img/f183-s.webp" srcset="img/f183-s.webp 900w, img/f183-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Upięcie fryzury panny młodej" loading="lazy" decoding="async" data-duze="img/f183-l.webp" data-alt="Upięcie fryzury panny młodej"><figcaption>Przygotowania</figcaption></figure>
+  <figure class="odb"><img src="img/f047-s.webp" srcset="img/f047-s.webp 600w, img/f047-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Panna młoda zakłada kolczyki" loading="lazy" decoding="async" data-duze="img/f047-l.webp" data-alt="Panna młoda zakłada kolczyki"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f046-s.webp" srcset="img/f046-s.webp 600w, img/f046-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Pan młody poprawia krawat" loading="lazy" decoding="async" data-duze="img/f046-l.webp" data-alt="Pan młody poprawia krawat"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f044-s.webp" srcset="img/f044-s.webp 600w, img/f044-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Spinki do mankietów" loading="lazy" decoding="async" data-duze="img/f044-l.webp" data-alt="Spinki do mankietów"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f003-s.webp" srcset="img/f003-s.webp 900w, img/f003-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Obrączki w drewnianym pudełku" loading="lazy" decoding="async" data-duze="img/f003-l.webp" data-alt="Obrączki w drewnianym pudełku"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f032-s.webp" srcset="img/f032-s.webp 600w, img/f032-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Pan młody z chłopcem przy lustrze" loading="lazy" decoding="async" data-duze="img/f032-l.webp" data-alt="Pan młody z chłopcem przy lustrze"><figcaption></figcaption></figure>
+  <figure class="odb" data-r="ceremonia"><img src="img/f061-s.webp" srcset="img/f061-s.webp 600w, img/f061-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Panna młoda z bukietem w samochodzie" loading="lazy" decoding="async" data-duze="img/f061-l.webp" data-alt="Panna młoda z bukietem w samochodzie"><figcaption>Ceremonia</figcaption></figure>
+  <figure class="odb"><img src="img/f093-s.webp" srcset="img/f093-s.webp 600w, img/f093-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Panna młoda w drodze na ślub" loading="lazy" decoding="async" data-duze="img/f093-l.webp" data-alt="Panna młoda w drodze na ślub"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f226-s.webp" srcset="img/f226-s.webp 900w, img/f226-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="900" alt="Wyjście z kościoła w deszczu konfetti" loading="lazy" decoding="async" data-duze="img/f226-l.webp" data-alt="Wyjście z kościoła w deszczu konfetti"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f214-s.webp" srcset="img/f214-s.webp 600w, img/f214-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Para młoda w deszczu płatków róż" loading="lazy" decoding="async" data-duze="img/f214-l.webp" data-alt="Para młoda w deszczu płatków róż"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f064-s.webp" srcset="img/f064-s.webp 600w, img/f064-l.webp 1199w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Płatki róż po ceremonii" loading="lazy" decoding="async" data-duze="img/f064-l.webp" data-alt="Płatki róż po ceremonii"><figcaption></figcaption></figure>
+  <figure class="odb" data-r="plener"><img src="img/f063-s.webp" srcset="img/f063-s.webp 900w, img/f063-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Kwiaty na pomarańczowym garbusie" loading="lazy" decoding="async" data-duze="img/f063-l.webp" data-alt="Kwiaty na pomarańczowym garbusie"><figcaption>Plener</figcaption></figure>
+  <figure class="odb"><img src="img/f066-s.webp" srcset="img/f066-s.webp 900w, img/f066-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Para młoda przy pomarańczowym garbusie" loading="lazy" decoding="async" data-duze="img/f066-l.webp" data-alt="Para młoda przy pomarańczowym garbusie"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f078-s.webp" srcset="img/f078-s.webp 900w, img/f078-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Para młoda w sosnowym lesie" loading="lazy" decoding="async" data-duze="img/f078-l.webp" data-alt="Para młoda w sosnowym lesie"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f073-s.webp" srcset="img/f073-s.webp 600w, img/f073-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Jesienny plener przy rzeźbie" loading="lazy" decoding="async" data-duze="img/f073-l.webp" data-alt="Jesienny plener przy rzeźbie"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f105-s.webp" srcset="img/f105-s.webp 900w, img/f105-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Plener w złotej godzinie" loading="lazy" decoding="async" data-duze="img/f105-l.webp" data-alt="Plener w złotej godzinie"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f115-s.webp" srcset="img/f115-s.webp 600w, img/f115-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Pocałunek o zachodzie słońca" loading="lazy" decoding="async" data-duze="img/f115-l.webp" data-alt="Pocałunek o zachodzie słońca"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f142-s.webp" srcset="img/f142-s.webp 900w, img/f142-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="674" alt="Para młoda na pomoście o świcie" loading="lazy" decoding="async" data-duze="img/f142-l.webp" data-alt="Para młoda na pomoście o świcie"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f022-s.webp" srcset="img/f022-s.webp 600w, img/f022-l.webp 1200w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Para młoda przy fortepianie" loading="lazy" decoding="async" data-duze="img/f022-l.webp" data-alt="Para młoda przy fortepianie"><figcaption></figcaption></figure>
+  <figure class="odb" data-r="zabawa"><img src="img/f086-s.webp" srcset="img/f086-s.webp 900w, img/f086-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="600" alt="Pierwszy taniec" loading="lazy" decoding="async" data-duze="img/f086-l.webp" data-alt="Pierwszy taniec"><figcaption>Zabawa</figcaption></figure>
+  <figure class="odb"><img src="img/f116-s.webp" srcset="img/f116-s.webp 600w, img/f116-l.webp 853w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Taniec w sukni z falbanami" loading="lazy" decoding="async" data-duze="img/f116-l.webp" data-alt="Taniec w sukni z falbanami"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f122-s.webp" srcset="img/f122-s.webp 600w, img/f122-l.webp 853w" sizes="(max-width:700px) 60vw, 700px" width="600" height="900" alt="Krojenie tortu" loading="lazy" decoding="async" data-duze="img/f122-l.webp" data-alt="Krojenie tortu"><figcaption></figcaption></figure>
+  <figure class="odb"><img src="img/f193-s.webp" srcset="img/f193-s.webp 900w, img/f193-l.webp 1800w" sizes="(max-width:700px) 60vw, 700px" width="900" height="601" alt="Szalona zabawa na parkiecie" loading="lazy" decoding="async" data-duze="img/f193-l.webp" data-alt="Szalona zabawa na parkiecie"><figcaption></figcaption></figure>
+ </div>
+ <div class="pas-nav"><button id="wstecz" aria-label="Poprzednie zdjęcia">&larr;</button><button id="dalej" aria-label="Następne zdjęcia">&rarr;</button></div>
+</section>
+
+<section class="zgory" id="z-gory">
+ <div class="wrap grid">
+  <div class="opis">
+   <h2>Świat najlepiej wygląda z&nbsp;góry</h2>
+   <p>Jestem pilotem samolotowym i&nbsp;szybowcowym, a&nbsp;do tego certyfikowanym operatorem drona. Dlatego na ślubie i&nbsp;w&nbsp;plenerze mogę pokazać Was z&nbsp;perspektywy, której nie da się złapać z&nbsp;ziemi: pomost nad wodą, ogród, aleja, cała sala gości.</p>
+   <ul class="fakty">
+    <li>Kwalifikacje Urzędu Lotnictwa Cywilnego</li>
+    <li>Wsparcie Polskiej Agencji Żeglugi Powietrznej</li>
+    <li>Zdjęcia z&nbsp;drona na ślubach, eventach i&nbsp;dla firm</li>
+   </ul>
+  </div>
+  <div class="mozaika">
+   <a href="img/f040-l.webp" class="" data-duze="img/f040-l.webp" data-alt="Para młoda na pomoście, widok z drona"><img src="img/f040-s.webp" srcset="img/f040-s.webp 675w, img/f040-l.webp 1350w" sizes="(max-width:900px) 46vw, 380px" width="675" height="900" alt="Para młoda na pomoście, widok z drona" loading="lazy" decoding="async"></a>
+   <a href="img/f206-l.webp" class="" data-duze="img/f206-l.webp" data-alt="Para młoda na alejce w zieleni, widok z góry"><img src="img/f206-s.webp" srcset="img/f206-s.webp 675w, img/f206-l.webp 1350w" sizes="(max-width:900px) 46vw, 380px" width="675" height="900" alt="Para młoda na alejce w zieleni, widok z góry" loading="lazy" decoding="async"></a>
+   <a href="img/f321-l.webp" class="szer" data-duze="img/f321-l.webp" data-alt="Opactwo w Tyńcu i Wisła z lotu ptaka"><img src="img/f321-s.webp" srcset="img/f321-s.webp 900w, img/f321-l.webp 1800w" sizes="(max-width:900px) 92vw, 760px" width="900" height="674" alt="Opactwo w Tyńcu i Wisła z lotu ptaka" loading="lazy" decoding="async"></a>
+   <a href="img/f136-l.webp" class="" data-duze="img/f136-l.webp" data-alt="Para na drewnianym tarasie nocą, z góry"><img src="img/f136-s.webp" srcset="img/f136-s.webp 674w, img/f136-l.webp 1348w" sizes="(max-width:900px) 46vw, 380px" width="674" height="900" alt="Para na drewnianym tarasie nocą, z góry" loading="lazy" decoding="async"></a>
+   <a href="img/f204-l.webp" class="" data-duze="img/f204-l.webp" data-alt="Druhny leżące na trawie, ujęcie z drona"><img src="img/f204-s.webp" srcset="img/f204-s.webp 600w, img/f204-l.webp 1066w" sizes="(max-width:900px) 46vw, 380px" width="600" height="900" alt="Druhny leżące na trawie, ujęcie z drona" loading="lazy" decoding="async"></a>
+   <a href="img/f259-l.webp" class="szer" data-duze="img/f259-l.webp" data-alt="Szybowce w hangarze"><img src="img/f259-s.webp" srcset="img/f259-s.webp 900w, img/f259-l.webp 1600w" sizes="(max-width:900px) 92vw, 760px" width="900" height="600" alt="Szybowce w hangarze" loading="lazy" decoding="async"></a>
+  </div>
+ </div>
+</section>
+
+<section class="firmy" id="dla-firm">
+ <div class="wrap">
+  <div class="head">
+   <h2>Dla firm i&nbsp;restauracji</h2>
+   <p>Fotografia kulinarna, barowa, koncertowa i&nbsp;eventowa. W&nbsp;każdym projekcie staram się dostrzec jego indywidualne cechy i&nbsp;podkreślić to, co jest dla niego unikalne, z&nbsp;uwagą na potrzeby i&nbsp;oczekiwania klientów.</p>
+  </div>
+  <div class="siatka">
+   <a href="img/f253-l.webp" class="" data-duze="img/f253-l.webp" data-alt="Sałatka z grillowanym kurczakiem"><img src="img/f253-s.webp" srcset="img/f253-s.webp 600w, img/f253-l.webp 1200w" sizes="(max-width:700px) 46vw, 310px" width="600" height="900" alt="Sałatka z grillowanym kurczakiem" loading="lazy" decoding="async"></a>
+   <a href="img/f232-l.webp" class="" data-duze="img/f232-l.webp" data-alt="Koktajl z Jack Daniels na barze"><img src="img/f232-s.webp" srcset="img/f232-s.webp 600w, img/f232-l.webp 853w" sizes="(max-width:700px) 46vw, 310px" width="600" height="900" alt="Koktajl z Jack Daniels na barze" loading="lazy" decoding="async"></a>
+   <a href="img/f303-l.webp" class="" data-duze="img/f303-l.webp" data-alt="Koncert, wokalistka w żółtym garniturze"><img src="img/f303-s.webp" srcset="img/f303-s.webp 595w, img/f303-l.webp 902w" sizes="(max-width:700px) 46vw, 310px" width="595" height="900" alt="Koncert, wokalistka w żółtym garniturze" loading="lazy" decoding="async"></a>
+   <a href="img/f251-l.webp" class="" data-duze="img/f251-l.webp" data-alt="Koktajl w kieliszku coupe"><img src="img/f251-s.webp" srcset="img/f251-s.webp 600w, img/f251-l.webp 1067w" sizes="(max-width:700px) 46vw, 310px" width="600" height="900" alt="Koktajl w kieliszku coupe" loading="lazy" decoding="async"></a>
+   <a href="img/f287-l.webp" class="l" data-duze="img/f287-l.webp" data-alt="Samochód sportowy w studio"><img src="img/f287-s.webp" srcset="img/f287-s.webp 900w, img/f287-l.webp 1800w" sizes="(max-width:700px) 92vw, 620px" width="900" height="600" alt="Samochód sportowy w studio" loading="lazy" decoding="async"></a>
+   <a href="img/f317-l.webp" class="l" data-duze="img/f317-l.webp" data-alt="Zespół na scenie przed publicznością"><img src="img/f317-s.webp" srcset="img/f317-s.webp 900w, img/f317-l.webp 1800w" sizes="(max-width:700px) 92vw, 620px" width="900" height="600" alt="Zespół na scenie przed publicznością" loading="lazy" decoding="async"></a>
+   <a href="img/f266-l.webp" class="" data-duze="img/f266-l.webp" data-alt="Drinki jesień-zima dla MOLO Resort"><img src="img/f266-s.webp" srcset="img/f266-s.webp 615w, img/f266-l.webp 1230w" sizes="(max-width:700px) 46vw, 310px" width="615" height="900" alt="Drinki jesień-zima dla MOLO Resort" loading="lazy" decoding="async"></a>
+   <a href="img/f236-l.webp" class="" data-duze="img/f236-l.webp" data-alt="Campari na barze"><img src="img/f236-s.webp" srcset="img/f236-s.webp 600w, img/f236-l.webp 853w" sizes="(max-width:700px) 46vw, 310px" width="600" height="900" alt="Campari na barze" loading="lazy" decoding="async"></a>
+   <a href="img/f326-l.webp" class="" data-duze="img/f326-l.webp" data-alt="Stół na kolacji degustacyjnej"><img src="img/f326-s.webp" srcset="img/f326-s.webp 716w, img/f326-l.webp 1026w" sizes="(max-width:700px) 46vw, 310px" width="716" height="900" alt="Stół na kolacji degustacyjnej" loading="lazy" decoding="async"></a>
+   <a href="img/f334-l.webp" class="" data-duze="img/f334-l.webp" data-alt="Sesja wizerunkowa przy pianinie"><img src="img/f334-s.webp" srcset="img/f334-s.webp 718w, img/f334-l.webp 1020w" sizes="(max-width:700px) 46vw, 310px" width="718" height="900" alt="Sesja wizerunkowa przy pianinie" loading="lazy" decoding="async"></a>
+   <a href="img/f285-l.webp" class="l" data-duze="img/f285-l.webp" data-alt="Motocykl w studio"><img src="img/f285-s.webp" srcset="img/f285-s.webp 900w, img/f285-l.webp 1800w" sizes="(max-width:700px) 92vw, 620px" width="900" height="600" alt="Motocykl w studio" loading="lazy" decoding="async"></a>
+   <a href="img/f262-l.webp" class="" data-duze="img/f262-l.webp" data-alt="Koktajl z whiskey na pomarańczowym tle"><img src="img/f262-s.webp" srcset="img/f262-s.webp 720w, img/f262-l.webp 1441w" sizes="(max-width:700px) 46vw, 310px" width="720" height="900" alt="Koktajl z whiskey na pomarańczowym tle" loading="lazy" decoding="async"></a>
+   <a href="img/f270-l.webp" class="" data-duze="img/f270-l.webp" data-alt="Mojito z Bacardi"><img src="img/f270-s.webp" srcset="img/f270-s.webp 599w, img/f270-l.webp 1198w" sizes="(max-width:700px) 46vw, 310px" width="599" height="900" alt="Mojito z Bacardi" loading="lazy" decoding="async"></a>
+  </div>
+  <div class="klienci">
+   <div>
+    <h3>Fotografowałem koncerty</h3>
+    <ul><li>Ørganek</li><li>Łąki Łan</li><li>Lao Che</li><li>MINT</li><li>Wojciech Szumański</li><li>Sławomir</li><li>Kabaret Czwarta Fala</li><li>Luxtorpeda</li><li>Domowe Melodie</li><li>Cyber Marian</li><li>Margaret</li><li>Adam Sztaba</li></ul>
+   </div>
+   <div>
+    <h3>Pracowałem dla firm</h3>
+    <ul><li>DIAGEO Bar Academy</li><li>MOLO Resort w&nbsp;Osieku</li><li>Porsche Polska</li><li>Food and Ball by Arkadiusz Milik</li><li>Męskie Granie - Festiwal</li><li>Roe &amp; Co Irish Whiskey</li><li>Podawane z&nbsp;Pasją - Marcin Szyma</li><li>Browar Tenczynek</li><li>PowerMeal</li><li>Muzeum Wódki Jakob Haberfeld</li><li>Hotel Restauracja Platan</li><li>Spirit Depot</li><li>Dal Forno</li></ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="wrap grid">
+  <div>
+   <h2>Napiszcie, kiedy i&nbsp;gdzie bierzecie ślub</h2>
+   <p style="margin-top:20px">Sprawdzę, czy mam wolny termin, i&nbsp;odpiszę z&nbsp;propozycją. Przy zleceniach dla firm wystarczy krótki opis projektu.</p>
+   <div class="dane">
+    <a href="tel:+48664383005">664 383 005</a>
+    <a href="mailto:p.ludwikowski@gmail.com">p.ludwikowski@gmail.com</a>
+    <small>Paweł Ludwikowski - Fotografia, Chrzanów<br>NIP 628-228-67-07</small>
+   </div>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('.info').textContent='To podgląd - formularz zacznie wysyłać wiadomości na docelowej stronie.'">
+   <label>Imię<input type="text" name="imie" autocomplete="name"></label>
+   <label>Data ślubu lub wydarzenia<input type="text" name="data" placeholder="np. 12.09.2027"></label>
+   <label class="cala">Miejsce uroczystości lub eventu<input type="text" name="miejsce"></label>
+   <label>E-mail<input type="email" name="email" autocomplete="email"></label>
+   <label>Telefon<input type="tel" name="telefon" autocomplete="tel"></label>
+   <label class="cala">Wiadomość<textarea name="wiadomosc"></textarea></label>
+   <button class="btn btn-ciemny" type="submit">Wyślij zapytanie</button>
+   <span class="info"></span>
+  </form>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div class="grid">
+   <div><img src="img/logo-bialy.webp" width="520" height="381" alt="Paweł Ludwikowski Fotografia" loading="lazy"><p style="margin-top:16px">Fotograf ślubny i&nbsp;komercyjny z&nbsp;Chrzanowa.<br>Małopolska, Śląsk i&nbsp;cała Polska.</p></div>
+   <div><a href="tel:+48664383005">664 383 005</a><br><a href="mailto:p.ludwikowski@gmail.com">p.ludwikowski@gmail.com</a><br>NIP 628-228-67-07</div>
+   <div><a href="#slub">Śluby</a><br><a href="#z-gory">Z drona</a><br><a href="#dla-firm">Dla firm</a><br><a href="#kontakt">Kontakt</a></div>
+  </div>
+  <div class="dol"><span>© 2026 Paweł Ludwikowski - Fotografia</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=pawelludwikowski.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-label="Podgląd zdjęcia"><button class="x" aria-label="Zamknij">&times;</button><button class="p" aria-label="Poprzednie">&lsaquo;</button><img alt=""><button class="n" aria-label="Następne">&rsaquo;</button></div>
+
+<script>
+(function(){
+var top=document.getElementById('top'),menu=document.getElementById('menu'),bg=document.getElementById('burger');
+function sc(){top.classList.toggle('scr',window.scrollY>40)}sc();addEventListener('scroll',sc,{passive:true});
+bg.addEventListener('click',function(){var o=menu.classList.toggle('on');top.classList.toggle('menu-on',o);bg.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menu.classList.remove('on');top.classList.remove('menu-on')})});
+var pas=document.getElementById('pas');
+var down=false,sx=0,sl=0,moved=false;
+pas.addEventListener('mousedown',function(e){down=true;moved=false;sx=e.pageX;sl=pas.scrollLeft;pas.classList.add('drag')});
+addEventListener('mouseup',function(){down=false;pas.classList.remove('drag')});
+pas.addEventListener('mousemove',function(e){if(!down)return;var d=e.pageX-sx;if(Math.abs(d)>5)moved=true;pas.scrollLeft=sl-d});
+pas.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation()}},true);
+function krok(k){pas.scrollBy({left:k*pas.clientWidth*.7,behavior:'smooth'})}
+document.getElementById('wstecz').onclick=function(){krok(-1)};document.getElementById('dalej').onclick=function(){krok(1)};
+var rb=document.querySelectorAll('#rozdzialy button');
+rb.forEach(function(b){b.addEventListener('click',function(){var el=pas.querySelector('[data-r="'+b.dataset.r+'"]');if(el)pas.scrollTo({left:el.offsetLeft-pas.offsetLeft-parseFloat(getComputedStyle(pas).paddingLeft),behavior:'smooth'})})});
+var t;pas.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var cur='przygotowania';pas.querySelectorAll('[data-r]').forEach(function(el){if(el.offsetLeft-pas.offsetLeft-pas.scrollLeft<pas.clientWidth*.4)cur=el.dataset.r});rb.forEach(function(b){b.classList.toggle('on',b.dataset.r===cur)})},80)},{passive:true});
+var lb=document.getElementById('lb'),li=lb.querySelector('img'),lista=[],idx=0;
+document.querySelectorAll('[data-duze]').forEach(function(el,i){lista.push(el);el.addEventListener('click',function(e){e.preventDefault();if(pas.contains(el)&&moved)return;idx=lista.indexOf(el);pokaz()})});
+function pokaz(){var el=lista[idx];li.src=el.getAttribute('data-duze');li.alt=el.getAttribute('data-alt')||'';lb.classList.add('on')}
+lb.querySelector('.x').onclick=function(){lb.classList.remove('on')};
+lb.querySelector('.p').onclick=function(e){e.stopPropagation();idx=(idx-1+lista.length)%lista.length;pokaz()};
+lb.querySelector('.n').onclick=function(e){e.stopPropagation();idx=(idx+1)%lista.length;pokaz()};
+lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('on')});
+addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')lb.querySelector('.p').click();if(e.key==='ArrowRight')lb.querySelector('.n').click()});
+var ts=0;lb.addEventListener('touchstart',function(e){ts=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-ts;if(Math.abs(d)>50)(d>0?lb.querySelector('.p'):lb.querySelector('.n')).click()});
+})();
+</script>
+</body>
+</html>
